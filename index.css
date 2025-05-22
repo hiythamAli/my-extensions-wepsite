@@ -1,0 +1,418 @@
+
+
+.header {
+  flex-wrap: wrap;
+    margin: 30%;
+    background-color: #474767;
+
+    padding: 10% 50%;
+    height: 40%;
+  border-radius: 10%;
+  max-width: 100%;
+max-height: 100%;
+
+
+}
+.body {
+  background: linear-gradient(to right, #e0f7fa, #ffffff); /* نهاري */
+  color: #000;
+  transition: 0.4s ease, color 0.4s ease;
+  max-width: 10%;
+  max-height: 100%;
+
+}
+.night-mode {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* ليلي */
+  color: #fff;
+}
+
+.toast {
+  visibility: hidden;
+  min-width: 100px;
+  background-color: #36363e;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 12px 20px;
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.5s, bottom 0.5s;
+}
+
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50%;
+}
+
+.container {
+  transition: opacity 0.4s ease;
+  opacity: 1;
+  max-width: 100%;
+
+}
+
+.container.hide {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+
+
+
+.logo {
+    
+   padding: 5%;
+    width: 150%;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.4s ease;
+}
+
+.moon{
+padding: 7% 7%;
+height: 25%;
+width: 25%;
+cursor: pointer;
+
+transition: all 0.4s ease;
+transform: rotate(0deg);
+}
+
+.moon.rotate {
+transform: rotate(180deg);
+}
+
+
+
+
+.extinsions-list{
+
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+  
+   max-width: 100%;
+
+}
+.extinsions-list h2 {
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30%;
+    max-width: 100%;
+}
+
+
+
+
+.btn{
+  max-width: 100%;
+    font-family: "Roboto", sans-serif;
+    background-color: #392e6e;
+    color: white;
+    border-radius: 30%;
+    padding: 5% 15%;
+    border: none;
+  height: 30%;
+
+margin: 4%;
+
+}
+.btn:hover{
+  opacity: 0.5;
+    background-color:brown;
+    font-size: 15%;
+    }
+
+
+    .btn1{
+  background-color: #392e6e;
+      font-family: "Roboto", sans-serif;
+      border-radius: 30%;
+      padding: 5% 15%;
+      border: none;
+    height: 30%;
+  color: aliceblue;
+  max-width: 100%;
+  }
+  .btn1:hover{
+    opacity: 0.5;
+      background-color:brown;
+      font-size: 15%;
+      }
+  
+      .btn2{
+        background-color: #392e6e;
+            font-family: "Roboto", sans-serif;
+            border-radius: 30%;
+            padding: 5% 15%;
+            border: none;
+          height: 30%;
+        color: aliceblue;
+        max-width: 100%;
+        }
+        .btn2:hover{
+          opacity: 0.5;
+            background-color:brown;
+            font-size: 15%;
+            }
+            .btn3{
+              background-color: #392e6e;
+                  font-family: "Roboto", sans-serif;
+                  border-radius: 30%;
+                  padding: 5% 15%;
+                  border: none;
+                height: 30%;
+              color: aliceblue;
+              max-width: 100%;
+              }
+              .btn3:hover{
+                opacity: 0.5;
+                  background-color:brown;
+                  font-size: 15%;
+                  }
+
+
+
+    
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55%;
+    height: 30%;
+   
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+    border-radius: 40%;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20%;
+    width: 20%;
+    left: 4%;
+    bottom: 4%;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color:brown;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1% brown;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26%);
+    -ms-transform: translateX(26%);
+    transform: translateX(26%);
+  }
+
+  .cards-info{
+    max-width: 100%;
+background-color: #474767;
+width: 350%;
+
+border-top-right-radius: 20%;
+border-top-left-radius:20% ;
+  padding: 10%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+  }
+
+.card-name {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+align-items: center;
+justify-content: space-between;
+max-width: 100%;
+}
+
+.green{
+
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+}
+.info{
+margin: 10%;
+
+}
+ .card-buttons {
+ height: 50%;
+  background-color: #474767;
+  width: 350%;
+  padding: 10%;
+
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  max-width: 100%;
+  
+
+ }
+ .tow{
+
+margin: 5%;
+display: flex;
+justify-content:space-between;
+align-items: center;
+ }
+
+.container{
+
+ 
+  max-width: 50%;
+  
+margin: 10%;
+
+
+}
+.cards{
+margin-left: 150%;
+border-top-right-radius: 20%;
+border-top-left-radius: 20%;
+max-width: 50%;
+
+width: 1250%;
+  justify-content: space-around;
+  display: flex;
+ align-items: start ;
+  
+
+}
+.cards1{
+  margin-left: 150%;
+  width: 1250%;
+
+   
+  max-width: 50%;
+  
+    justify-content: space-around;
+    display: flex;
+   align-items: start ;
+    
+}
+
+.cards2{
+  margin-left: 150%;
+  width: 1250%;
+border-bottom-right-radius: 20%;
+border-bottom-left-radius: 20%;
+ 
+max-width: 50%;
+
+  justify-content: space-around;
+  display: flex;
+ align-items: start ;
+  
+}
+
+
+.first1{
+
+  max-width: 100%;
+
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+
+.first2{
+
+  max-width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.first3{
+
+margin-bottom: 100%;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100%;
+
+}
+
+.card-name h4{
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+display: flex;  
+justify-content: space-around;
+  stroke-opacity: .5;
+margin: 20px;
+
+
+}
+
+ 
+
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .header, .setting {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  span {
+    font-size: 14px;
+  }
+}
+
+
+
+
